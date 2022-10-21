@@ -1,0 +1,96 @@
+.header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    width: 20rem;
+}
+
+.image img {
+    border-radius: 2rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+
+p {
+    color: #a59999;
+}
+
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.name {
+    grid-column: 1/3;
+    text-align: center;
+    color: #ffffff;
+}
+
+.location,
+.github {
+    grid-column: 1/3;
+}
+
+a {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    margin: 0 4rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a59999;
+}
+
+.publications {
+    border: .2rem solid #ffffff;
+    padding: 0rem 4rem;
+    height: 20rem;
+}
+
+.publications p {
+    font-size: 7rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.publications span {
+    font-size: 2rem;
+
+}
+
+@media (max-width: 1124px) {
+
+    .publications {
+        padding: 0rem 3rem;
+        height: 15rem;
+    }
+
+    .publications p {
+        margin: .5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .publications {
+        display: none;
+    }
+
+
+}
